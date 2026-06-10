@@ -1,0 +1,100 @@
+╔══════════════════════════════════════════════════════════════╗
+║   DIALOGFLOW NA PRATICA — PyCharm / VSCode                  ║
+║   Guia de configuracao para iniciantes                      ║
+╚══════════════════════════════════════════════════════════════╝
+
+━━━ PRIMEIRO PASSO: INSTALACAO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Abra o terminal no PyCharm (View > Tool Windows > Terminal)
+   OU o terminal integrado do VSCode (Ctrl+`)
+
+2. Digite o comando abaixo e pressione Enter:
+   pip install -r requirements.txt
+
+   Ou, se preferir instalar um por um:
+   pip install colorama
+   pip install scikit-learn
+
+━━━ COMO RODAR UM EXEMPLO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+No PyCharm:
+  1. Abra o arquivo desejado (ex: g1_ex01_cumprimentador.py)
+  2. Clique no botao verde ▶ Run (canto superior direito)
+     OU pressione Shift+F10
+
+No VSCode:
+  1. Abra o arquivo desejado
+  2. Pressione F5
+     OU clique em ▶ Run Python File (canto superior direito)
+
+No Terminal (qualquer editor):
+  python g1_ex01_cumprimentador.py
+
+O que acontece ao rodar:
+  1. Os testes automaticos aparecem no terminal
+  2. O chat abre em seguida — voce ja pode conversar!
+  3. Digite "sair" para encerrar o chat
+
+━━━ COMANDOS DO CHAT ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Durante o chat, voce pode digitar:
+  sair   → encerra o chat
+  reset  → comeca uma nova conversa (limpa o contexto)
+
+━━━ MAPA DOS ARQUIVOS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+GRUPO 1 — Versao Original (9 exemplos)
+┌─────────────────────────────────┬─────────────┬───────────┐
+│ Arquivo                         │ Bot         │ Nivel     │
+├─────────────────────────────────┼─────────────┼───────────┤
+│ g1_ex01_cumprimentador.py       │ Oi/Tchau    │ Facil     │
+│ g1_ex02_faq_escola.py           │ FAQ Escola  │ Facil     │
+│ g1_ex03_adivinha.py             │ Adivinha    │ Facil     │
+│ g1_ex04_pizza.py                │ Pizzaria    │ Intermed. │
+│ g1_ex05_notas.py                │ Notas       │ Intermed. │
+│ g1_ex06_quiz.py                 │ Quiz        │ Intermed. │
+│ g1_ex07_sac.py                  │ SAC         │ Avancado  │
+│ g1_ex08_psicologo.py            │ Sentimento  │ Avancado  │
+│ g1_ex09_eventos.py              │ Ingressos   │ Avancado  │
+└─────────────────────────────────┴─────────────┴───────────┘
+
+GRUPO 2 — Versao Turbinada (13 exemplos)
+┌─────────────────────────────────┬─────────────────┬─────────┐
+│ Arquivo                         │ Bot             │ Nivel   │
+├─────────────────────────────────┼─────────────────┼─────────┤
+│ g2_ex01_cumprimentador_turb.py  │ Cumpriment+     │ Facil   │
+│ g2_ex02_faq_escola_completo.py  │ FAQ 9 topicos   │ Facil   │
+│ g2_ex03_adivinha_turbinado.py   │ Adivinha+dicas  │ Facil   │
+│ g2_ex04_piadas.py               │ Piadas          │ Facil   │
+│ g2_ex05_bate_papo.py            │ Casual          │ Facil   │
+│ g2_ex06_pizzaria_completa.py    │ Pizzaria 5 etap │ Interme │
+│ g2_ex07_notas_faltas.py         │ Notas+Faltas    │ Interme │
+│ g2_ex08_quiz_turbo.py           │ Quiz+Ranking    │ Interme │
+│ g2_ex09_agendamento.py          │ Agendamento     │ Interme │
+│ g2_ex10_delivery.py             │ Delivery        │ Interme │
+│ g2_ex11_sac_enterprise.py       │ SAC Enterprise  │ Avancad │
+│ g2_ex12_assistente_estudos.py   │ Estudos         │ Avancad │
+│ g2_ex13_financeiro.py           │ Financeiro      │ Avancad │
+└─────────────────────────────────┴─────────────────┴─────────┘
+
+━━━ SUGESTAO DE SEQUENCIA DE ESTUDO ━━━━━━━━━━━━━━━━━━━━━━━━
+
+Semana 1 (Facil):     g1_ex01 → g1_ex02 → g1_ex03
+Semana 2 (Intermed.): g1_ex04 → g1_ex05 → g1_ex06
+Semana 3 (Avancado):  g1_ex07 → g1_ex08 → g1_ex09
+Semana 4 (Turbinado): Qualquer arquivo g2_* do mesmo nivel
+
+━━━ DICA DE DEBUG NO PYCHARM ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+O chat mostra uma linha de debug apos cada resposta:
+  [intent: saudacao | certeza: 85% | contexto: nenhum]
+
+Se quiser desativar o debug, chame:
+  bot.chat(debug=False)
+
+Se quiser testar uma frase sem abrir o chat:
+  r = bot.detectar("oi tudo bem")
+  print(r)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Bons estudos! 🚀

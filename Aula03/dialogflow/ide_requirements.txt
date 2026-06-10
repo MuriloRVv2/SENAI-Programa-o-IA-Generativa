@@ -1,0 +1,15 @@
+# ─────────────────────────────────────────────────────────────
+# DEPENDENCIAS DO PROJETO — Dialogflow na Pratica
+# ─────────────────────────────────────────────────────────────
+#
+# COMO INSTALAR (no terminal do PyCharm ou VSCode):
+#   pip install -r requirements.txt
+#
+# OU instalar cada um separado:
+#   pip install colorama
+#   pip install scikit-learn
+# ─────────────────────────────────────────────────────────────
+
+colorama>=0.4.6       # Cores no terminal (todos os exemplos)
+scikit-learn>=1.3.0   # TF-IDF para exemplos Intermediarios/Avancados
+numpy>=1.24.0         # Calculos numericos (scikit-learn ja instala junto)

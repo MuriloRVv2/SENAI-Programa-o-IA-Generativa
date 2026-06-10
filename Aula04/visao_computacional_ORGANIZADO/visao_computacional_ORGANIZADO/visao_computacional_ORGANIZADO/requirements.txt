@@ -1,0 +1,27 @@
+# ==========================================================
+#  BIBLIOTECAS DA AULA DE VISAO COMPUTACIONAL
+#  Instale tudo de uma vez com:
+#     pip install -r requirements.txt
+# ==========================================================
+
+# --- Base de Visao Computacional ---
+opencv-python          # o coracao da aula: abrir, mexer e mostrar imagens
+numpy                  # matematica de matrizes (a "tabela de numeros" da imagem)
+
+# --- Detecao avancada de objetos (Etapa 3) ---
+ultralytics            # YOLO pronto pra usar (detecao + treinamento)
+
+# --- Reconhecimento facial de verdade (Etapa 2) ---
+# Obs: 'face_recognition' depende de 'dlib', que as vezes da trabalho no Windows.
+# No Colab funciona facil. Plano B (mais simples) explicado no .docx.
+face_recognition
+
+# --- STT - Speech to Text / fala em texto (Etapa 2) ---
+SpeechRecognition      # transforma audio em texto
+pyaudio                # acesso ao microfone (so necessario no PC, nao no Colab)
+
+# --- Bots Telegram e WhatsApp (Etapa 4) ---
+python-telegram-bot    # bot do Telegram
+pywhatkit              # automacao simples de WhatsApp
+requests               # baixar imagens/arquivos da internet
+pillow                 # manipular imagens em formato amigavel
